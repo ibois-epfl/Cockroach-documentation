@@ -12,7 +12,7 @@ permalink: /
 Cockroach is an open-source project for making point cloud processing more accessible to designers and makers.
 {: .fs-6 .fw-300 }
 
-[Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/9and3/Cockroach){: .btn .fs-5 .mb-4 .mb-md-0 }
+[Get started now](#getting-started){: .btn .btn-green .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/9and3/Cockroach){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
