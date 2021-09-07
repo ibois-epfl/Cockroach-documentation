@@ -77,7 +77,7 @@ Just the Docs is distributed by an [LGPL-3.0 Licence](https://github.com/9and3/C
 ### Contributing
 
 When contributing to this repository, please first discuss the change you wish to make via issue,
-email, or any other method with the owners of this repository before making a change. We are more than welcoming in having contribution to Cockroach. We have also a Slack channel. Just send an email to [Petras Vestartas](petras.vestartas@epfl.ch) or [Andrea Settimi](andrea.settimi@epfl.ch)
+email, or any other method with the owners of this repository before making a change. We are more than welcoming in having contribution to Cockroach. We have also a Slack channel. Just send an email to [Petras Vestartas](petras.vestartas@epfl.ch) or [Andrea Settimi](andrea.settimi@epfl.ch).
 
 #### Thank you to the contributors of Just the Docs!
 
