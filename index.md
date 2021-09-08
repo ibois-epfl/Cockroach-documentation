@@ -65,7 +65,7 @@ Bibitex citation:
     title = {Cockroach: A plug-in for point cloud post-processing and meshing in Rhino environment},
     journal = {EPFL ENAC ICC IBOIS},
     url = {https://github.com/9and3/Cockroach},
-    year = {2020} }
+    year = {2020}}
 ```
 Citation (no Bibtex): 
 ```
