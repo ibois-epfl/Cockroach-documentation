@@ -1,0 +1,22 @@
+14:30 08/09/2021
+Notes on running Jekyll from the IBOIS server on local windows machine. Here I list some of the problems and solutions I ofund to run Jkyll from local machine.
+
+////////////////////////////////////////////////////////////////////////////
+A) Fetch the LAN IBOIS server directory
+
+Jekyll cannot go to the directors of \\enac1files\IBOIS with 'cd'. In order to go to this directors on windows try:
+
+$ pushd \\enac1files\IBOIS
+
+Now you can simulate the website from there.
+
+////////////////////////////////////////////////////////////////////////////
+B) If you are using the ruby gems v 3.0.0 the 'webrick' doesn't ship with. You need to add it manually after the wizard ruby installation is finished (for this follow this link: https://jekyllrb.com/docs/installation/windows/). The cmd is:
+
+$ bundle add webrick
+
+////////////////////////////////////////////////////////////////////////////
+C) Run the website locally
+To run the website locally open a cmd and go to the directory where the jekyll is. Than type this:
+
+$ bundle exec jekyll serve --trace
