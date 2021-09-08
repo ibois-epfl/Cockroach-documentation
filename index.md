@@ -33,8 +33,6 @@ If you want to take it up a notch, you can also use Cockroach in Grasshopper, a 
 
 If you are developer and you are familiar with C++ environment you can install Cockroach Vanilla flavour, the core version of the library. For now there are no wrappers for higher level languages such as Python but this is in our Roadmap. [Go to the C++ version]({{ site.baseurl }}{% link docs/installation/vanilla.md %}).
 
-- [See configuration options]({{ site.baseurl }}{% link docs/configuration.md %})
-
 ---
 
 ## About the project
