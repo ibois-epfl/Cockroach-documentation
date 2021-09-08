@@ -24,14 +24,14 @@ Cockroach is a collection of the most interesting and useful point cloud and mes
 
 ### Quick start: Use Cockroach as Rhinoceros® and Grasshopper
 
-If you don't want to type one single line of code but you want all the functionalities and a nice user interface, we made Cockroach as a plug-in for [Rinoceros®](https://www.rhino3d.com/download/), a very versatile, simple and lean CAD program. We are also planning to add a standalone version of Cockroach, at least for Windows machines. [Go to the Rhino installation]({{ site.baseurl }}{% link docs/installation/Rhino-Plug-in-installation.md %}).
-If you want to take it up a notch, you can also use Cockroach in Grasshopper, a visual scripting language shiped with Rhinoceros® 7.
+If you don't want to type one single line of code but you want all the functionalities and a nice user interface, we made Cockroach as a plug-in for [Rinoceros®](https://www.rhino3d.com/download/), a very versatile, simple and lean CAD program. We are also planning to add a standalone version of Cockroach, at least for Windows machines. [Go to the Rhino installation]({{ site.baseurl }}{% link docs/installation/rhino-Plug-in-installation.md %}).
+If you want to take it up a notch, you can also use Cockroach in Grasshopper, a visual scripting language shiped with Rhinoceros® 7. [Go to the Grasshopper installation]
 
 <small>Cockroach is compatible with Rhinoceros 7 and Rhinoceros 6, preavious versions are not supported. [See the downloadable versions](https://www.rhino3d.com/download/)</small>
 
 ### Cockroach vanilla
 
-If you are developer and you are familiar with C++ environment you can install Cockroach Vanilla flavour, the core version of the library. For now there are no wrappers for higher level languages such as Python but this is in our Roadmap. Follow the installation and configuration for the [C++ version].
+If you are developer and you are familiar with C++ environment you can install Cockroach Vanilla flavour, the core version of the library. For now there are no wrappers for higher level languages such as Python but this is in our Roadmap. [Go to the C++ version]({{ site.baseurl }}{% link docs/installation/vanilla.md %}).
 
 - [See configuration options]({{ site.baseurl }}{% link docs/configuration.md %})
 
