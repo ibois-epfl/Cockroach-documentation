@@ -12,7 +12,7 @@ permalink: /
 Cockroach is an open-source project for making point cloud processing more accessible to designers and makers.
 {: .fs-6 .fw-300 }
 
-[Get started now](#getting-started){: .btn .btn-green .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/9and3/Cockroach){: .btn .fs-5 .mb-4 .mb-md-0 } [View it on Food4Rhino](https://www.food4rhino.com/en/app/cockroach){: .btn .fs-5 .mb-4 .mb-md-0 } [Make a donation](https://www.google.com/search?q=bank+account+number&rlz=1C1GCEU_enCH917CH917&oq=bank+account&aqs=chrome.0.0i512j46i512j0i512l7j0i271.5926j0j4&sourceid=chrome&ie=UTF-8){: .btn .btn-green .fs-5 .mb-4 .mb-md-0 }
+[Get started now](#getting-started){: .btn .btn-green .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/9and3/Cockroach){: .btn .fs-5 .mb-4 .mb-md-0 } [View it on Food4Rhino](https://www.food4rhino.com/en/app/cockroach){: .btn .fs-5 .mb-4 .mb-md-0 } [Make a donation](https://en.wikipedia.org/wiki/Scrooge_McDuck){: .btn .btn-green .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
@@ -20,45 +20,14 @@ Cockroach is an open-source project for making point cloud processing more acces
 
 ### Dependencies
 
-Just the Docs is built for [Jekyll](https://jekyllrb.com), a static site generator. View the [quick start guide](https://jekyllrb.com/docs/) for more information. Just the Docs requires no special plugins and can run on GitHub Pages' standard Jekyll compiler. The [Jekyll SEO Tag plugin](https://github.com/jekyll/jekyll-seo-tag) is included by default (no need to run any special installation) to inject SEO and open graph metadata on docs pages. For information on how to configure SEO and open graph metadata visit the [Jekyll SEO Tag usage guide](https://jekyll.github.io/jekyll-seo-tag/usage/).
+Cockroach is a collection of the most interesting and useful point cloud and mesh functions from various libraries: [Open3D](http://www.open3d.org/), [Cilantro](https://github.com/kzampog/cilantro), [CGAL](https://www.cgal.org/), [PCL](https://pointclouds.org/). There are many libraries out there about point cloud (and mesh) processing, often one library is missing particular useful functions that another has. This way the development it's continuously stoped by adding, compiling, referencing libraries. Cockroach lets you use all these libraries seamlessly all at once.
 
-### Quick start: Use as a GitHub Pages remote theme
+### Quick start: Use Cockroach as Rhinoceros®
 
-1. Add Just the Docs to your Jekyll site's `_config.yml` as a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/)
-```yaml
-remote_theme: pmarsceill/just-the-docs
-```
-<small>You must have GitHub Pages enabled on your repo, one or more Markdown files, and a `_config.yml` file. [See an example repository](https://github.com/pmarsceill/jtd-remote)</small>
+If you don't want to type one single line of code but you want all the functionalities and a nice user interface, we made Cockroach as a plug-in for Rinoceros®, a very versatile, simple and lean CAD program. We are also planning to add a standalone version of Cockroach, at least for Windows machines.
+If you want to take a notch up, you can also use Cockroach as a  
 
-### Local installation: Use the gem-based theme
-
-1. Install the Ruby Gem
-```bash
-$ gem install just-the-docs
-```
-```yaml
-# .. or add it to your your Jekyll site’s Gemfile
-gem "just-the-docs"
-```
-2. Add Just the Docs to your Jekyll site’s `_config.yml`
-```yaml
-theme: "just-the-docs"
-```
-3. _Optional:_ Initialize search data (creates `search-data.json`)
-```bash
-$ bundle exec just-the-docs rake search:init
-```
-3. Run you local Jekyll server
-```bash
-$ jekyll serve
-```
-```bash
-# .. or if you're using a Gemfile (bundler)
-$ bundle exec jekyll serve
-```
-4. Point your web browser to [http://localhost:4000](http://localhost:4000)
-
-If you're hosting your site on GitHub Pages, [set up GitHub Pages and Jekyll locally](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll) so that you can more easily work in your development environment.
+<small>Cockroach is compatible with Rhinoceros 7 and Rhinoceros 6, preavious versions are not supported. [See the downloadable versions](https://www.rhino3d.com/download/)</small>
 
 ### Configure Just the Docs
 
@@ -68,19 +37,37 @@ If you're hosting your site on GitHub Pages, [set up GitHub Pages and Jekyll loc
 
 ## About the project
 
-Just the Docs is &copy; 2017-{{ "now" | date: "%Y" }} by [Patrick Marsceill](http://patrickmarsceill.com).
+2020-{{ "now" | date: "%Y" }} by [Petras Vestartas](https://github.com/petrasvestartas) and [Andrea Settimi](https://github.com/9and3).
+
+### Acknowledgements
+
+The laboratory for Timber Construction (IBOIS) at École Polytechnique Fédérale de Lausanne (EPFL) financially supports the authors contribution to the current researchof point cloud processing tools.
 
 ### License
 
-Just the Docs is distributed by an [LGPL-3.0 Licence](https://github.com/9and3/Cockroach/blob/Cockroach/LICENSE).
+Cockroach is distributed by an [LGPL-3.0 Licence](https://github.com/9and3/Cockroach/blob/Cockroach/LICENSE). Cockroach is released under LGPL. If you use Cockroach in published work, please also cite the third-party libraries we used: Open3D, CGAL, Open3D. The code is fully open, complying with CGAL (LGPL license). We encourage use for research purposes, as long as proper attribution is given. Feel free to send us an email and let us know how Cockroach has been useful to you and how it can be improved.
 
 ### Contributing
 
-When contributing to this repository, please first discuss the change you wish to make via issue,
-email, or any other method with the owners of this repository before making a change. We are more than welcoming in having contribution to Cockroach. We have also a Slack channel. Just send an email to [Petras Vestartas](petras.vestartas@epfl.ch) or [Andrea Settimi](andrea.settimi@epfl.ch).
+Cockroach is an open-source project and everybody is welcomed to constribute. When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change. We are more than welcoming in having contribution to Cockroach. We have also a Slack channel. Just send an email to [Petras Vestartas](petras.vestartas@epfl.ch) or [Andrea Settimi](andrea.settimi@epfl.ch).
 
-#### Thank you to the contributors of Just the Docs!
+Otherwise, you can always make a donation, via this [link(to be updated)](https://en.wikipedia.org/wiki/Scrooge_McDuck).
 
 ### Code of Conduct and Citation
 
-Just the Docs is committed to fostering a welcoming community interested in point cloud, computer vision and computer graphics for AEC (and more!).To know more
+Cockroach is committed to fostering a welcoming community interested in computer vision and computer graphics for AEC (and not only).To know more about our researches visit the [IBOIS official website](https://www.epfl.ch/labs/ibois/). Please use this citation if you use Cockroach in published work. Also, please also cite the third-party libraries we used: [Open3D](http://www.open3d.org/), [Cilantro](https://github.com/kzampog/cilantro), [CGAL](https://www.cgal.org/), [PCL](https://pointclouds.org/).
+
+Bibitex citation:
+
+```
+ @misc{IBOIS2020,
+    author = {Petras Vestartas and Andrea Settimi},
+    title = {Cockroach: A plug-in for point cloud post-processing and meshing in Rhino environment},
+    journal = {EPFL ENAC ICC IBOIS},
+    url = {https://github.com/9and3/Cockroach},
+    year = {2020} }
+```
+Citation (no Bibtex): 
+```
+Petras Vestartas and Andrea Settimi, Cockroach: A Plug-in for Point Cloud Post-Processing and Meshing in Rhino Environment, EPFL ENAC ICC IBOIS, 2020, https://github.com/9and3/Cockroach.
+```
