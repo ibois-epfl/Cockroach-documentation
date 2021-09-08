@@ -1,6 +1,6 @@
 ---
 layout: default
 title: Rhino plug-in
-parent: installation
+parent: Installation
 nav_order: 2
 ---

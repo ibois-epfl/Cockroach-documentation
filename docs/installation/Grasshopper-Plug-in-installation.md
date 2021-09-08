@@ -1,6 +1,6 @@
 ---
 layout: default
 title: Grasshopper plug-in
-parent: installation
+parent: Installation
 nav_order: 3
 ---
