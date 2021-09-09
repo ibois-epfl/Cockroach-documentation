@@ -3,7 +3,6 @@ layout: default
 title: Grasshopper plug-in
 parent: Installation
 nav_order: 2
-permalink: docs/installation/grasshopper-installation
 ---
 
 # Grasshopper installation
