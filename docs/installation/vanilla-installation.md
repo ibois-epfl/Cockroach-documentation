@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Vanilla plug-in
+title: Vanilla
 parent: Installation
 nav_order: 3
 ---
