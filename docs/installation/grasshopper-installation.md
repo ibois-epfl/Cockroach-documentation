@@ -8,7 +8,7 @@ nav_order: 3
 # Grasshopper installation
 {: .no_toc }
 
-Rhino installation description.
+Grasshopper installation description.
 {: .fs-6 .fw-300 }
 
 ---
