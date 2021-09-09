@@ -30,6 +30,8 @@ If you don't want to type one single line of code but you want all the functiona
 
 If you want to take it up a notch, you can also use Cockroach in Grasshopper, a visual scripting language shiped with Rhinoceros® 7. 
 
+[Go to the Grasshopper installation]({{ site.baseurl }}{% link docs/installation/grasshopper-installation.md %})
+
 <small>Cockroach is compatible with Rhinoceros 7, and Rhinoceros 6, preavious versions are not supported. [See the downloadable versions](https://www.rhino3d.com/download/)</small>
 
 ### Cockroach vanilla
