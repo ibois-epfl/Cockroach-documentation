@@ -17,6 +17,11 @@ $ bundle add webrick
 
 ////////////////////////////////////////////////////////////////////////////
 C) Run the website locally
-To run the website locally open a cmd and go to the directory where the jekyll is. Than type this:
+
+To run the website locally open a cmd and go to the directory where the jekyll is. 
+
+$ pushd <ibois-server-directory>
+
+Than type this:
 
 $ bundle exec jekyll serve --trace
