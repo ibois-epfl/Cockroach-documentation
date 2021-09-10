@@ -17,7 +17,7 @@ $ bundle add webrick
 Open the project on VSCode and open a new cmd which points to the local directory of the cloned repo. If you are on IBOIS server you have to type this cmd:
 
 ```console
-$ pushd \\enac1files\IBOIS\<name-folder>
+$ pushd \\enac1files\IBOIS\name-folder
 ```
 
 Once Jekyll is installed and the VSCode project is ready you can run Jekyll locally. Note that to make the changes effective they need to be pushed to the GitHub repo on-line.
