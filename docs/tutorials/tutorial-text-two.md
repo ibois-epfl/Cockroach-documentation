@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Tutorial test one title
+title: Tutorial test two title
 parent: Tutorial
 nav_order: 1
 ---
