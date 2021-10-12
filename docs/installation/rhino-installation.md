@@ -22,3 +22,31 @@ Text
 
 ### Sub-sub-title
 Text
+
+**bold writing**
+
+This is a [link](http://localhost:4000/Cockroach-documentation/docs/installation/rhino-installation/)
+
+images must be pushed to github and referenced here
+
+Blocks of code
+
+In-line code
+
+
+`this is a line of code`
+
+```python
+y = 5+9
+print(x)
+```
+
+```bash
+$ git clone whatever
+```
+
+```cpp
+int a = 10+10;
+```
+
+label ![label_of_the_image](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/Cockroach_logo.png)
