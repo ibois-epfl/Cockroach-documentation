@@ -2,13 +2,13 @@
 layout: default
 title: Tutorial test two title
 parent: Tutorial
-nav_order: 1
+nav_order: 2
 ---
 
-# Tutorial one test sub-title
+# Tutorial two test sub-title
 {: .no_toc }
 
-Tutorial one test sub-description
+Tutorial two test sub-description
 {: .fs-6 .fw-300 }
 
 ---
