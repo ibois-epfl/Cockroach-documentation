@@ -13,36 +13,40 @@ Rhino installation description.
 
 ---
 
-# Main title
+# Package Manager
 
-bla bla bla
+In Rhino Command Line type "PackageManager"
 
 ## Sub-title
+Text
 
-bla bla bla
-
-### Sub-Sub-title
-
-bla bla bla
-
+### Sub-sub-title
+Text
 
 **bold writing**
 
-this is a [link](https://jekyllrb.com/docs/installation/windows/)
+This is a [link](http://localhost:4000/Cockroach-documentation/docs/installation/rhino-installation/)
 
+images must be pushed to github and referenced here
 
-![label of the image](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/Cockroach_logo_250_250.png?raw=true)
+Blocks of code
+
+In-line code
+
 
 `this is a line of code`
 
-Some random text
-
 ```python
-x = 3 + 4
+y = 5+9
 print(x)
 ```
-Some text in between
 
 ```bash
 $ git clone whatever
 ```
+
+```cpp
+int a = 10+10;
+```
+
+![label of the image](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/Cockroach_logo.png?raw=true)
