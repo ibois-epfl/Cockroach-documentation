@@ -49,4 +49,4 @@ $ git clone whatever
 int a = 10+10;
 ```
 
-label ![label_of_the_image](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/Cockroach_logo.png)
+![label of the image](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/Cockroach_logo.png?raw=true)
