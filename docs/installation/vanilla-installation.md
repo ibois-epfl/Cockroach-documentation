@@ -153,4 +153,4 @@ And just launch the producecd .exe file
 ```
 If everything is working, you should be able to visualize this "bug":
 
-![showthebug](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/snap_bug_success.PNG)
+![showthebug](img/snap_bug_success.PNG)
