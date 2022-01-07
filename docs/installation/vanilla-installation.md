@@ -10,6 +10,8 @@ nav_order: 3
 
 Cockroach can be used as a header-only library. It helps installing several point cloud processing and bridge them. This section show you how to install and use Cockroach Vanilla flavour via CMake.
 
+Author: [Andrea Settimi](andrea.settimi@epfl.ch)
+
 {: .fs-6 .fw-300 }
 
 ---
