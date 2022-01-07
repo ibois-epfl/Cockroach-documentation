@@ -4,9 +4,13 @@ This is just a barebone website, it needs to be first filled with documentation 
 
 ---
 
-## Run Jekyll on win machine locally
+## Install Jekyll on win machine locally
 
 Clone the repo. And install Jekyll/Ruby for win, follow the link [here](https://jekyllrb.com/docs/installation/windows/). More documentation on Jekylls [here](https://www.youtube.com/watch?v=EvYs1idcGnM&list=PLWzwUIYZpnJuT0sH4BN56P5oWTdHJiTNq&index=1)
+
+## Use Jekyll on win machine
+
+Go to the documentation directory.
 
 If you are using the ruby gems v 3.0.0 the 'webrick' doesn't ship with. You need to add it manually after the wizard ruby installation is finished:
 
