@@ -93,7 +93,7 @@ cmake --build build --config Release --target ALL_BUILD
 ```
 And to install it:
 ```terminal
-cmake --build build --config Release --target INSTALLALL_BUILD
+cmake --build build --config Release --target INSTALL
 ```
 
 ### Cilantro
