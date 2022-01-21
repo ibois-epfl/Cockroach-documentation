@@ -26,6 +26,8 @@ If you haven't installed it yet, download the .[msi](https://cmake.org/) from th
 
 CMake should be now installed into your environment variables. Just check it by going `Start Menu (⊞ Win)` > type `Edit environment variables for your account` > click on `Environment Variables...` button on the bottom left of the pannel > on `System variables` pannel look for the entry voice `Path` and doube-click it. You should see that a directory pointing to your `bin` folder of CMake (e.g., in my case `C:\Program Files\CMake\bin`). In case add it, close and you are good to go.
 
+> ⚠️ if you do not have a *Visual Studio* and *C++ support for windows* be sure to download it and install it, for more info how to do it go [here](https://docs.microsoft.com/en-us/cpp/build/vscpp-step-0-installation?view=msvc-170).  
+
 ## Install dependecies
 
 If you haven't installed dependecies yet in your system you would need to this first.
