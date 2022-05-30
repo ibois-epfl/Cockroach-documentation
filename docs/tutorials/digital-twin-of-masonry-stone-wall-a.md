@@ -16,7 +16,7 @@ This tutorial has been realized by IBOIS by the collaboration with the laborator
 
 The tutorial is divided in 3 parts **(a,b,c)**. The first part **(a)** illustrates how to digitize and build a stone data set, the second **(b)** shows how to reallign multiple scans into the same coordinate system and finally **(c)** we relocate the stone model into the wall landscape.
 
-> 💬 To be able to reproduce these tutorials you will need the *WIP* version of Cockroach. Download Cockroach from [food4rhino](https://www.food4rhino.com/en/app/cockroach) and replace the `.rhp` file with this [one here](https://downgit.github.io/#/home?url=https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/assets/fjoint/cloud_marker.dxf). This version will be stable in the future.
+💬 To be able to reproduce these tutorials you will need the *WIP* version of Cockroach. Download Cockroach from [food4rhino](https://www.food4rhino.com/en/app/cockroach) and replace the `.rhp` file with this [one here](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/assets/fjoint/Cockroach.rhp). This version will be soon stable and released.
 
 ![gitrotatestone](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/_gif_out_stone_batch.gif?raw=true)
  <center><font size="2"><i> The objective of the tutorial is to build a data set of stone digital twins from different scans. </i></font></center>
