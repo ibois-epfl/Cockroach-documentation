@@ -17,19 +17,16 @@ This tutorial has been realized by IBOIS by the collaboration with the laborator
 The tutorial is divided in 3 parts **(a,b,c)**. The first part **(a)** illustrates how to digitize and build a stone data set, the second **(b)** shows how to reallign multiple scans into the same coordinate system and finally **(c)** we relocate the stone model into the wall landscape.
 
 ![wallrec](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/wall_reconstruct.gif?raw=true)
- <center><font size="2"><i> The objective of the tutorial is to show how to bring all the scans into the same coordinate system. </i></font></center>
+ <center><font size="2"><i> The objective of the tutorial is to show how identify each ston pose within the wall. </i></font></center>
 
 {: .fs-6 .fw-300 }
 
 ---
 
-## Preparing the scans
+## ///
 
-This second section of the tutorial illustrates how to digitize and build a catalog of irregular geometries with Cockroach.
-
-Stones need to be scanned on both sides and labeled if necessary for the reconstruction. See the image below:
+///
 
 
 ---
 ![wallrec](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/wall_reconstruct.gif?raw=true)
- <center><font size="2"><i> Figure 1: photo of one side of the stone batch. RAD markers are just specific to the laser scanning technique employed in our case but are not necessary. </i></font></center>

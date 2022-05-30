@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Digital twin of masonry stone wall (Rhino) - a
+title: Digital twin of masonry stone wall (Rhino) - b
 parent: Tutorial
-nav_order: 1
+nav_order: 2
 ---
 
-# Digital twin of masonry stone wall (Rhino)
+# Digital twin of masonry stone wall (Rhino) - Layers allignment
 {: .no_toc }
 
 <br />
@@ -16,68 +16,61 @@ This tutorial has been realized by IBOIS by the collaboration with the laborator
 
 The tutorial is divided in 3 parts **(a,b,c)**. The first part **(a)** illustrates how to digitize and build a stone data set, the second **(b)** shows how to reallign multiple scans into the same coordinate system and finally **(c)** we relocate the stone model into the wall landscape.
 
+![layerrec](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/layer_reconstruction.gif?raw=true)
+ <center><font size="2"><i> The objective of the tutorial is to show how to bring all the scans into the same coordinate system. </i></font></center>
+
 {: .fs-6 .fw-300 }
 
 ---
 
-## Stone scanning
+## Scanning of wall layers
 
-This first section of the tutorial illustrates how to digitize and build a catalog of irregular geometries with Cockroach.
+This second section of the tutorial illustrates how to allign all the scans of the wall layers to the same coordinate system.
 
-Stones need to be scanned on both sides and labeled if necessary for the reconstruction. See the image below:
+During the fabrication of the wall, each layer needs to be digitized. It is often the case that, independently from the scanning technique you are using, scans will be offset one to another. Our goal here is to re-align all the scanss to the same coordinate system in order to reconstruct a wall layer by layer. To help in this task we are going to use fiducial markers which have been designed to be detected in any point cloud, independently from the hardware employed to obtain it.
 
-![stonestablescanning](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/Stone_scanning_distribution_D.jpg?raw=true)
- <center><font size="2"><i> Figure 1: photo of one side of the stone batch. RAD markers are just specific to the laser scanning technique employed in our case but are not necessary. </i></font></center>
+![markerone](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/snapper111.PNG?raw=true)
+![markertwo](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/snapper222.PNG?raw=true)
+ <center><font size="2"><i> Figure 1: manual cleaning of the point cloud. </i></font></center>
 
----
-
-## Import and cleaning of point clouds
-
-Open a Rhinoceros 7 new file and be sure that the unit system is set to meter as measurement unit. To do so type `Option` on the `Rhino Shell` and click `enter`, go to section `unit` and select `meter`. Now we can import the output point cloud fro mthe scanner as a format .e57. It is enough to drag and drop the file into Rhino worksapce canvas. On the option prompt select import and wait for the downloading, it might take a while. Now we have imported our "raw" point cloud. As you can see, we need first to clean the raw point cloud. Let's tackle this point first.
-
-![stonebatchone](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/stone_batch_1.PNG?raw=true)
- <center><font size="2"><i> Figure 2: A raw point cloud of one side of the batch. </i></font></center>
-
-The first operation is to manually remove point clouds cluster hard to automatically detect. To do so you need to hold `Ctrl + Shift` and drag your selection with `Right mouse button`. Once selected (in yellow) you can delete them with `delete` button. If you are cleaning a point cloud and you need a quick solution to manually clean a point cloud, this approach is your best all
-
-<iframe width="600" height="400" src="https://www.youtube.com/embed/kMHNWRAoG4o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-Before proceding we need to downsample our point cloud. In fact, there are points in our point cloud that are really close (> 1 mm). This resolution slows down our cleaning and do not bring any good quality to our data. To reduce the cloud resolution select the cloud and next we are going to type `Cockroach_VoxelDownsample` into the Rhino shell, click enter . Click on the parameter `VoxelSize` and type 0.002 (~2mm). Now, press enter. Erase the old point cloud (the one selected) and it's done!
-
-Now we need to get rid of the plane. To do so we are going to type the command `Cockroach_PlaneSegmentation` in the shell. Now, we need to select the point cloud to segment, `click-left` on our cloud. If the workspace is well in meters, the `DistanceThreshold` parameter should be set to 0.01 (~1cm). Once detected the plane (RANSAAC), this value represent the cutting threshold distance. Click enter, this will take a moment. Get rid of the other point clouds except the individual stones by selecting them and deleting them. If there are some clusters left from the segmentation, delete them like in the preavious step.
-
-![stonebatchtwo](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/stone_batch_2.PNG?raw=true)
- <center><font size="2"><i> Figure 3: Point cloud after the removal of the ground. </i></font></center>
-
-It's time to seperate our stones and create one individual point cloud for each stone. To do so we are going to use the command `Cockroach_ClusterEuclideanKSearch`, type it in the shell and press enter. Select the point cloud. Once selected, the presets should be fine except one: click on ColorPointCloud. This will change the value from True to False, we don't want our new clusters to be colored. The output cloud is in a group, to degroup, select it and type `ungroup`, press `enter`. Now each stone is a seperate cloud.
-
-We need to do one last thing: evaluate the normals of the cloud. This is a very important information in the point cloud and we need to compute it and embed it in the point cloud. Normals are often not well oriented once the cloud is imported. The following image shows a stone point cloud with wrong normals (A). If you are in doubt about the normal "quality" use the command `Cockroach_ShowNormals`. This will show the normals with different colors accordingly to their directions. As you can see the normals in this case are all over around (B). 
- We are going to use the command `Cockroach_ComputePointCloudNormals`, select all the clouds first. This will evaluate the point cloud normals and orient them in the right direction. `NormalsNeighbours` should be set to 30. In the right image (C) you can see that the normals are correctly oriented.
-
-![stonebatchthree](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/stone_batch_3.PNG?raw=true)
-![stonebatchfour](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/stone_batch_4.PNG?raw=true)
- <center><font size="2"><i> Figure 4: The above operation should be repeated for each stone. This won't take long. At the end our batch will have the corrected orientation for the stones. </i></font></center>
-
-Our batch composed by halves of stones is done. Next we need to do the exact same procedure for the twin scan of the other side of the stone shells. Once completed it, the two batches need to be imported in the same file (or one of the two). Now we can register the two stones together.
-
-![stonebatchfive](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/stone_batch_5.PNG?raw=true)
- <center><font size="2"><i> Figure 5: The above operation should be repeated for each stone. This won't take long. At the end our batch will have the corrected orientation for the stones. </i></font></center>
+Be sure to include the markers in the field of view during the scanning: they need to be present in the scan.
 
 ---
 
-## Registration of the two halves
+## Cleaning of point cloud layers
 
-We have the two cleans batches containing one half of the same stone. What we are going to do now is registering the two stones together to obtain one single stone. To do so, we are going to use the command `Cockroach_RegistrationRIManual` (see video). First select the point cloud *source* and after the cloud *target*, click `enter` or `backspace`. The parameters are preset. Click enter untill the two stones are well alligned, when it's fin click `esc` and the two halves will be registered. To know when the two halves are alligned have a look at the Rhino shell output. The bigger the `fitness` value, the better (more than 0.6). The smaller the `RMSE` value the better (less than 0.004).
+First we need to clean the part of the point cloud that we don't need and occupy needless memory. We need to keep the markers and the walls. What is underneath, we erase it. You can move your camera view to a lateral position where you can have a nice selection of the portion we want to delete. 
 
-<iframe width="600" height="400" src="https://www.youtube.com/embed/ExrO4wBvWqo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+To select, press `Ctrl + Alt` while dragging a selection with your left mouse button. See the image below to see the type of selection we need to clean. Next, you just click `delete` or `erase space`.
 
-> 💬 **Troubleshooting**: Sometimes the above method of registration (`Cockroach_RegistrationRIManual`) won't work, e.g., for very flat stones or very little ones. In this case, we need to do more extra work to register the two halves of the stone.  First we are going to manually place the two halves as close to their possible reconstruction as possible. We are going to use the command `move` and the `gumball` in the Rhino workspace. Once the two halves are roughly positioned we are going to use the command `Cockroach_RegistrationICPPtPl`. In the parameters, change `ThresholdDistance` to 0.001.
+![layerwallone](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/layer_1.PNG?raw=true)
+ <center><font size="2"><i> Figure 1: manual cleaning of the point cloud. </i></font></center>
 
-<iframe width="600" height="400" src="https://www.youtube.com/embed/JOiOsWIQ2Xc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ Now we need to divide each scan in 2 portions. 
+
+* The two parts containing the circle markers
+* The central part containing the wall
+
+To do so we are going first to draw a box with command:
+```Terminal
+Box
+```
+Place the box in a way to contain the central part of the wall. 
+
+Then, type the following in the command bar of Rhino:
+```Terminal
+Cockroach_crop
+```
+Select first the point cloud and then the box, at that's it we divided the cloud in two parts. This is what it should like once you finished with the command. Now you can either delete the box or move it to the next cloud to repeat the same procedure.
+
+![croplayer](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/croping_layer.gif?raw=true)
+ <center><font size="2"><i> Figure 2: The scene is divided into two parts: the central wall and the fiducial marker two areas. </i></font></center>
 
 ---
 
-The halves are correctly registered and well positioned. Now we just need to merge the two halves into one cloud per stone. To do so, welect the two halves by `drag-selection` or `left-click`, and type the command `Cockroach_MergeCloud`. The two shells are now merged into one point cloud ready to be stored. 
+## Marker detection
 
-![gitrotatestone](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/_gif_out_stone_batch.gif?raw=true)
- <center><font size="2"><i> Figure 6: The two halves of the stone are registered into one object. </i></font></center>
+
+---
+
+![layerrec](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/layer_reconstruction.gif?raw=true)

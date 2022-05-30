@@ -83,4 +83,3 @@ We have the two cleans batches containing one half of the same stone. What we ar
 The halves are correctly registered and well positioned. Now we just need to merge the two halves into one cloud per stone. To do so, welect the two halves by `drag-selection` or `left-click`, and type the command `Cockroach_MergeCloud`. The two shells are now merged into one point cloud ready to be stored. 
 
 ![gitrotatestone](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/_gif_out_stone_batch.gif?raw=true)
- <center><font size="2"><i> Figure 6: The two halves of the stone are registered into one object. </i></font></center>
