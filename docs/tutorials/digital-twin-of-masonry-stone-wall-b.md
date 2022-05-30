@@ -19,7 +19,7 @@ The tutorial is divided in 3 parts **(a,b,c)**. The first part **(a)** illustrat
 💬 To be able to reproduce these tutorials you will need the *WIP* version of Cockroach. Download Cockroach from [food4rhino](https://www.food4rhino.com/en/app/cockroach) and replace the `.rhp` file with this [one here](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/assets/fjoint/Cockroach.rhp). This version will be soon stable and released.
 
 ![layerrec](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/layer_reconstruction.gif?raw=true)
- <center><font size="2"><i> The objective of the tutorial is to show how to bring all the scans into the same coordinate system. </i></font></center>
+ <font size="2"><i> The objective of the tutorial is to show how to bring all the scans into the same coordinate system. </i></font>
 
 {: .fs-6 .fw-300 }
 
@@ -39,7 +39,7 @@ You can download it here:
 
 ![markerone](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/snapper111.PNG?raw=true)
 ![markertwo](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/snapper222.PNG?raw=true)
- <center><font size="2"><i> Figure 1: manual cleaning of the point cloud. </i></font></center>
+ <font size="2"><i> Figure 1: manual cleaning of the point cloud. </i></font>
 
 Be sure to include the markers in the field of view during the scanning: they need to be present in the scan.
 
@@ -52,7 +52,7 @@ First we need to clean the part of the point cloud that we don't need and occupy
 To select, press `Ctrl + Alt` while dragging a selection with your left mouse button. See the image below to see the type of selection we need to clean. Next, you just click `delete` or `erase space`.
 
 ![layerwallone](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/layer_1.PNG?raw=true)
- <center><font size="2"><i> Figure 2: manual cleaning of the point cloud. </i></font></center>
+ <font size="2"><i> Figure 2: manual cleaning of the point cloud. </i></font>
 
  Now we need to divide each scan in 2 portions. 
 
@@ -72,7 +72,7 @@ Cockroach_crop
 Select first the point cloud and then the box, at that's it we divided the cloud in two parts. This is what it should like once you finished with the command. Now you can either delete the box or move it to the next cloud to repeat the same procedure.
 
 ![croplayer](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/croping_layer.gif?raw=true)
- <center><font size="2"><i> Figure 3: The scene is divided into two parts: the central wall and the fiducial marker two areas. </i></font></center>
+ <font size="2"><i> Figure 3: The scene is divided into two parts: the central wall and the fiducial marker two areas. </i></font>
 
 ---
 
@@ -85,7 +85,7 @@ Cockroach_ClusterColor
 This is what the colored cluster should look like:
 
 ![clusterclr](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/cluster_color.PNG?raw=true)
- <center><font size="2"><i> Figure 4: The marker detection is done via color clustering and center calculation for each marker. </i></font></center>
+ <font size="2"><i> Figure 4: The marker detection is done via color clustering and center calculation for each marker. </i></font>
 
 Ungroup the colored cloud with `Shift + Ctrl + G`. Now we need to get the centers of each circle. To achieve this we need to create a bounding box of the circle (to take in account of all different orientations of the plane on which the points of the circles are). Run the following macro in Rhino ([what's_a_macro?](https://wiki.mcneel.com/rhino/basicmacros))
 
@@ -104,7 +104,7 @@ _Sellast
 This is the result of the macro:
 
 ![targetclr](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/markeridentified.PNG?raw=true)
- <center><font size="2"><i> Figure 5: Identification of the marker center. </i></font></center>
+ <font size="2"><i> Figure 5: Identification of the marker center. </i></font>
 
 ---
 

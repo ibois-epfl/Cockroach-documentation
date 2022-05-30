@@ -19,7 +19,7 @@ The tutorial is divided in 3 parts **(a,b,c)**. The first part **(a)** illustrat
 💬 To be able to reproduce these tutorials you will need the *WIP* version of Cockroach. Download Cockroach from [food4rhino](https://www.food4rhino.com/en/app/cockroach) and replace the `.rhp` file with this [one here](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/assets/fjoint/Cockroach.rhp). This version will be soon stable and released.
 
 ![wallrec](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/wall_reconstruct.gif?raw=true)
- <center><font size="2"><i> The objective of the tutorial is to show how identify each stone's pose within the each wall layer. </i></font></center>
+ <font size="2"><i> The objective of the tutorial is to show how identify each stone's pose within the each wall layer. </i></font>
 
 {: .fs-6 .fw-300 }
 
@@ -38,7 +38,7 @@ We probably do not need the full resolution of the wall layer, so first thing le
 Here we apply the same procedures for the registration of the stone dataset. Try to import a stone belonging to the layer and run `Cockroach_RegistrationRIManual`. If it works amazing, you're done for this step.
 
 ![regrimanual](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/registration_ri.gif?raw=true)
- <center><font size="2"><i> Figure 1: the supervised registration to relocate the rock in the wall scene. </i></font></center>
+ <font size="2"><i> Figure 1: the supervised registration to relocate the rock in the wall scene. </i></font>
 
 Now, `Cockroach_RegistrationRIManual` is under development and needs to be more robust. If it does not work go for the troubleshooting: the supervised manual placing. You move the rock with the gumball, approximate a position and run the `Cockroach_RegistrationICPPtPl`. This should refine its position.
 
@@ -49,7 +49,7 @@ Now, `Cockroach_RegistrationRIManual` is under development and needs to be more 
 Now that the rock is placed we need to remove its corresponding points in the wall layer. To do so we use `Cockroach_SubstractCloud` (RadiusSearch=0.01) which removes close points to the one of the newly registered stone. Before running the previous command copy the stone (`Ctrl + C`), you will need to re-paste it once the command is done (`Ctrl + V`).
 
 ![removecloud](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/remove_cloud.gif?raw=true)
- <center><font size="2"><i> Figure 2: the removal of the point in the correspondence of the reconstructed stone. </i></font></center>
+ <font size="2"><i> Figure 2: the removal of the point in the correspondence of the reconstructed stone. </i></font>
 
 ---
 
@@ -58,7 +58,7 @@ Now that the rock is placed we need to remove its corresponding points in the wa
 when you will go up in reconstructing the wall it might help the registration if you make a copy of the scan. **First** execute the first part of this section and **then**, delete the lower part which is not presenting new stones. This will reduce the number of possible combinations for the registration algorithms.
 
 ![erasecloud](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/chop_if_needed.gif?raw=true)
- <center><font size="2"><i> Figure 3: Do not run registration algorithms on the entirety of the point cloud. The less points are fed the better performance you will obtain. </i></font></center>
+ <font size="2"><i> Figure 3: Do not run registration algorithms on the entirety of the point cloud. The less points are fed the better performance you will obtain. </i></font>
 
 ---
 

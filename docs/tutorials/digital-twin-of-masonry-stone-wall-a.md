@@ -19,7 +19,7 @@ The tutorial is divided in 3 parts **(a,b,c)**. The first part **(a)** illustrat
 💬 To be able to reproduce these tutorials you will need the *WIP* version of Cockroach. Download Cockroach from [food4rhino](https://www.food4rhino.com/en/app/cockroach) and replace the `.rhp` file with this [one here](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/assets/fjoint/Cockroach.rhp). This version will be soon stable and released.
 
 ![gitrotatestone](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/_gif_out_stone_batch.gif?raw=true)
- <center><font size="2"><i> The objective of the tutorial is to build a data set of stone digital twins from different scans. </i></font></center>
+ <font size="2"><i> The objective of the tutorial is to build a data set of stone digital twins from different scans. </i></font>
 
 {: .fs-6 .fw-300 }
 
@@ -32,7 +32,7 @@ This first section of the tutorial illustrates how to digitize and build a catal
 Stones need to be scanned on both sides and labeled if necessary for the reconstruction. See the image below:
 
 ![stonestablescanning](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/Stone_scanning_distribution_D.jpg?raw=true)
- <center><font size="2"><i> Figure 1: photo of one side of the stone batch. RAD markers are just specific to the laser scanning technique employed in our case but are not necessary. </i></font></center>
+ <font size="2"><i> Figure 1: photo of one side of the stone batch. RAD markers are just specific to the laser scanning technique employed in our case but are not necessary. </i></font>
 
 ---
 
@@ -41,7 +41,7 @@ Stones need to be scanned on both sides and labeled if necessary for the reconst
 Open a Rhinoceros 7 new file and be sure that the unit system is set to meter as measurement unit. To do so type `Option` on the `Rhino Shell` and click `enter`, go to section `unit` and select `meter`. Now we can import the output point cloud fro mthe scanner as a format .e57. It is enough to drag and drop the file into Rhino worksapce canvas. On the option prompt select import and wait for the downloading, it might take a while. Now we have imported our "raw" point cloud. As you can see, we need first to clean the raw point cloud. Let's tackle this point first.
 
 ![stonebatchone](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/stone_batch_1.PNG?raw=true)
- <center><font size="2"><i> Figure 2: A raw point cloud of one side of the batch. </i></font></center>
+ <font size="2"><i> Figure 2: A raw point cloud of one side of the batch. </i></font>
 
 The first operation is to manually remove point clouds cluster hard to automatically detect. To do so you need to hold `Ctrl + Shift` and drag your selection with `Right mouse button`. Once selected (in yellow) you can delete them with `delete` button. If you are cleaning a point cloud and you need a quick solution to manually clean a point cloud, this approach is your best all
 
@@ -52,7 +52,7 @@ Before proceding we need to downsample our point cloud. In fact, there are point
 Now we need to get rid of the plane. To do so we are going to type the command `Cockroach_PlaneSegmentation` in the shell. Now, we need to select the point cloud to segment, `click-left` on our cloud. If the workspace is well in meters, the `DistanceThreshold` parameter should be set to 0.01 (~1cm). Once detected the plane (RANSAAC), this value represent the cutting threshold distance. Click enter, this will take a moment. Get rid of the other point clouds except the individual stones by selecting them and deleting them. If there are some clusters left from the segmentation, delete them like in the preavious step.
 
 ![stonebatchtwo](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/stone_batch_2.PNG?raw=true)
- <center><font size="2"><i> Figure 3: Point cloud after the removal of the ground. </i></font></center>
+ <font size="2"><i> Figure 3: Point cloud after the removal of the ground. </i></font>
 
 It's time to seperate our stones and create one individual point cloud for each stone. To do so we are going to use the command `Cockroach_ClusterEuclideanKSearch`, type it in the shell and press enter. Select the point cloud. Once selected, the presets should be fine except one: click on ColorPointCloud. This will change the value from True to False, we don't want our new clusters to be colored. The output cloud is in a group, to degroup, select it and type `ungroup`, press `enter`. Now each stone is a seperate cloud.
 
@@ -61,12 +61,12 @@ We need to do one last thing: evaluate the normals of the cloud. This is a very 
 
 ![stonebatchthree](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/stone_batch_3.PNG?raw=true)
 ![stonebatchfour](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/stone_batch_4.PNG?raw=true)
- <center><font size="2"><i> Figure 4: The above operation should be repeated for each stone. This won't take long. At the end our batch will have the corrected orientation for the stones. </i></font></center>
+ <font size="2"><i> Figure 4: The above operation should be repeated for each stone. This won't take long. At the end our batch will have the corrected orientation for the stones. </i></font>
 
 Our batch composed by halves of stones is done. Next we need to do the exact same procedure for the twin scan of the other side of the stone shells. Once completed it, the two batches need to be imported in the same file (or one of the two). Now we can register the two stones together.
 
 ![stonebatchfive](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/stone_batch_5.PNG?raw=true)
- <center><font size="2"><i> Figure 5: The above operation should be repeated for each stone. This won't take long. At the end our batch will have the corrected orientation for the stones. </i></font></center>
+ <font size="2"><i> Figure 5: The above operation should be repeated for each stone. This won't take long. At the end our batch will have the corrected orientation for the stones. </i></font>
 
 ---
 
