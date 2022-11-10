@@ -18,19 +18,19 @@ Before processing a point clouds we need to acquire one. 3D scanners or 3D senso
 
 ---
 
-![img_4](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/20210725_layout_range_finder.png)
+![img_4](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/20210725_layout_range_finder.png?raw=true)
 
 
-![img_1](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/20210725_layout_LiDAR_not_solid.png)
+![img_1](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/20210725_layout_LiDAR_not_solid.png?raw=true)
 
 
-![img_2](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/20210725_layout_LiDAR_rgb.png)
+![img_2](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/20210725_layout_LiDAR_rgb.png?raw=true)
 
 
-![img_3](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/20210725_layout_LiDAR_solid.png)
+![img_3](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/20210725_layout_LiDAR_solid.png?raw=true)
 
 
-![img_5](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/20210725_layout_structure_light.png)
+![img_5](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/20210725_layout_structure_light.png?raw=true)
 
 
-![img_6](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/20210725_layout_US.png)
+![img_6](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/20210725_layout_US.png?raw=true)
