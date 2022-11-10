@@ -34,3 +34,7 @@ Before processing a point clouds we need to acquire one. 3D scanners or 3D senso
 
 
 ![img_6](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/20210725_layout_US.png?raw=true)
+
+
+![img_7](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/20210725_stereo_camera.png?raw=true)
+
