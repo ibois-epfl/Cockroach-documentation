@@ -2,7 +2,7 @@
 layout: default
 title: Digital twin of masonry stone wall (Rhino) - c
 parent: Tutorial
-nav_order: 3
+nav_order: 4
 ---
 
 # Digital twin of masonry stone wall (Rhino) - Wall reconstruction
