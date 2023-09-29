@@ -8,45 +8,19 @@ nav_order: 1
 # Rhino installation
 {: .no_toc }
 
-Rhino installation description.
+Here's the instructions on how to install Cockroach Rhino plug-in.
 {: .fs-6 .fw-300 }
 
 ---
 
-# Package Manager
+**(1)** Go on [Food4Rhino here](https://www.food4rhino.com/en/app/cockroach) and download the latest version of Cockroach Rhino7 plug-in.
 
-In Rhino Command Line type "PackageManager"
+**(2)** In Rhino type `Options` on the internal terminal terminal, a pop-up window will appear like this one:
 
-## Sub-title
-Text
+![img_planesegmentation](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/installation/option_wind_rhino.png?raw=true)
 
-### Sub-sub-title
-Text
+**(3)** Click on the `Install...` button and select the Cockroach plug-in file you just downloaded. Then click on `Open` and `Close` the pop-up window.
 
-**bold writing**
+**(4)** Let's check if it is installed by just typing `Cockroach_` on the internal terminal. If it is the case as in the image below you are good to go.
 
-This is a [link](http://localhost:4000/Cockroach-documentation/docs/installation/rhino-installation/)
-
-images must be pushed to github and referenced here
-
-Blocks of code
-
-In-line code
-
-
-`this is a line of code`
-
-```python
-y = 5+9
-print(x)
-```
-
-```bash
-$ git clone whatever
-```
-
-```cpp
-int a = 10+10;
-```
-
-![label of the image](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/Cockroach_logo.png?raw=true)
+![img_planesegmentation](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/installation/check_rh_install.png?raw=true)
