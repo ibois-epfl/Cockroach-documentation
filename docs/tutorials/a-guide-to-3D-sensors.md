@@ -2,7 +2,7 @@
 layout: default
 title: A guide to 3D sensors
 parent: Tutorial
-nav_order: 1
+nav_order: 2
 ---
 
 # A guide to 3D sensors - Overview of different typologies

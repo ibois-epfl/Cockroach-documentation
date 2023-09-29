@@ -2,7 +2,7 @@
 layout: default
 title: Digital twin of masonry stone wall (Rhino) - a
 parent: Tutorial
-nav_order: 2
+nav_order: 3
 ---
 
 # Digital twin of masonry stone wall (Rhino) - Stones data set
