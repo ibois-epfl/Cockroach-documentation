@@ -12,5 +12,4 @@ permalink: docs/cmd_description
 Here you can find Cockroach commands for Rhino and their descriptions, what they do, and how to tune their parameters.
 {: .fs-6 .fw-300 }
 
-## List of commands
 {: .no_toc .text-delta }
