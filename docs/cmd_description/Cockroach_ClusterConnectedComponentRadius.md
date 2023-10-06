@@ -20,7 +20,6 @@ VoxelSizeSearch=0.1
 {: .fs-6 .fw-300 }
 This is the size of the voxel grid that will be used to search for neighbors. The smaller the value, the more accurate the algorithm will be but the slower it will be.
 
-
 ```
 NormalThresholdDegree=2
 ```
