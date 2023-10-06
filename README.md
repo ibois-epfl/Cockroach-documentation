@@ -33,14 +33,11 @@ $ bundle exec jekyll serve --trace
 ### Troubleshooting
 Cockroach docs run on the `2.3.4` version of bundle. If you recive an error that the bundle do not correspond force the install bundle by running this in the console:
 ```console
-bundle 2.3.4 install |-> Seems outdated. try:
-```
-```console
-
 gem install bundler:2.1.4
 bundle _2.1.4_ install
-
 ```
+
+
 ---
 
 ## Things to add:
