@@ -32,3 +32,9 @@ MinClusterSize=100
 ```
 {: .fs-6 .fw-300 }
 The minimum number of points that a cluster should have to be considered as a cluster. The smaller the value, the more clusters will be detected.
+
+```
+ColorPointCloud=True
+```
+{: .fs-6 .fw-300 }
+Whether to color the output group of clusters with random colors of keep the original colors.
