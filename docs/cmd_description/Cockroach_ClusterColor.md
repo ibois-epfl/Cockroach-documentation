@@ -13,7 +13,7 @@ parent: Cmd Description
 
 This is a clustering technique based on color. It will cluster the pointcloud based on the color of the points . It is often useful to cluster a pointcloud based on color to separate different colored component of a pointcloud. Note that this command can be used also with *grayscale* colors as in the image. As many clustering techniques the command uses a [KNNsearch](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) to find the colors relations of neighbors of each point.
 
-The main algorithm is based on the *Connected Component Extractor* with a color proximity evaluator from the function in [cilantro::ConnectedComponentExtraction3f](https://github.com/kzampog/cilantro/blob/57ad1a397b73b6f4bbf9604fd75f8fe4363206a7/include/cilantro/clustering/connected_component_extraction.hpp#L23).
+The main algorithm is based on the *Connected Component Extractor* with a color proximity evaluator from the function in [cilantro::ConnectedComponentExtraction3f()](https://github.com/kzampog/cilantro/blob/57ad1a397b73b6f4bbf9604fd75f8fe4363206a7/include/cilantro/clustering/connected_component_extraction.hpp#L23).
 
 **Command options:**
 ```
