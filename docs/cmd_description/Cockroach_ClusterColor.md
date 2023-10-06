@@ -9,7 +9,7 @@ parent: Cmd Description
 
 ![img_planesegmentation](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/cmds/cockroach_clustercolor.jpg?raw=true)
 
- <font size="2"><i> On the left: a gryscale cloud; on the right: the result of the color clustering. If you want to see an example of how the color clustering is used check out the <a href="[mailto:someone@example.com](https://ibois-epfl.github.io/Cockroach-documentation/docs/tutorials/digital-twin-of-masonry-stone-wall-b/)">digital-twin-masonry-tutorial</a>. </i></font>
+ <font size="2"><i> On the left: a gryscale cloud; on the right: the result of the color clustering. If you want to see an example of how the color clustering is used check out the <a href="https://ibois-epfl.github.io/Cockroach-documentation/docs/tutorials/digital-twin-of-masonry-stone-wall-b/">digital-twin-masonry-tutorial</a>. </i></font>
 
 This is a clustering technique based on color. It will cluster the pointcloud based on the color of the points . It is often useful to cluster a pointcloud based on color to separate different colored component of a pointcloud. Note that this command can be used also with *grayscale* colors as in the image. As many clustering techniques the command uses a [KNNsearch](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) to find the colors relations of neighbors of each point.
 
