@@ -20,6 +20,12 @@ General explanation of the goal of the post
 
 ---
 
+![img_downsample](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/whatispcd/ptvideo_intro.gif?raw=true)
+
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+![]([https://...Dark.png](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/whatispcd/_gif_out_stone_batch.gif?raw=true))  |  ![]([https://...Ocean.png](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/whatispcd/wall_reconstruct.gif?raw=true))
+
 - 1 why we need point cloud
 - 2 data structure definition
 - 3 properties
