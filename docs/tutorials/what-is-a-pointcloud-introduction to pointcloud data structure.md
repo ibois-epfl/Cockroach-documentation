@@ -24,8 +24,6 @@ We are quickly going through the basics and introduce a generic data structure o
 
 ---
 
-![](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/photocloud.png?raw=true)
-
 ## 0 What is a point cloud?
 
 Point clouds represent the shape and characteristics of a physical object or environment by a collection of data points in three dimensions. 
@@ -104,4 +102,4 @@ In general, a point cloud can be written to these files in two ways:
 ## 4 Next steps
 Now that you know what is a point cloud and how it is structured, you can start to play with it. You can start by downloading a point cloud from the internet and open it with a text editor. You can also try to open it with Rhino, visualize it and use [`Cockroach`](http://localhost:4000/Cockroach-documentation/docs/installation/rhino-installation/).
 
-If you want to know more about point clouds and why we created Cockroach, have a look at our ![paper](https://papers.cumincad.org/cgi-bin/works/paper/caadria2022_215).
+If you want to know more about point clouds and why we created Cockroach, have a look at our [paper](https://papers.cumincad.org/cgi-bin/works/paper/caadria2022_215).
