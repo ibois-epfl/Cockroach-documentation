@@ -11,35 +11,32 @@ nav_order: 6
 
 Authors: [damien.gilliard@epfl.ch](damien.gilliard@epfl.ch), [joseph.tannous@epfl.ch](joseph.tannous@epfl.ch), [andrea.settimi@epfl.ch](andrea.settimi@epfl.ch)
 
+This tutorial was made for a workshop held at IBois, EPFL for the studio Weinand (directed by Prof. Yves Weinand, under the supervision of Dr. Agathe Mignon ). The goal of the workshop is to introduce students to point cloud processing of a forest parcel in order to extract trees' polysurfaces. Students will use these irregular geometries to design structures.
 
-This tutorial was made for a workshop held at IBois, EPFL for the sudio Weinand (directed by Prof. Yves Weinand, under supervision of dr. Agathe Mignon )
+The tutorial uses open-source 3D point clouds from [The Center of Excellence in Laser Scanning Research](https://laserscanning.fi/). For more information: [International benchmarking of terrestrial laser scanning approaches for forest inventories (Liang et al 2018).](https://www.sciencedirect.com/science/article/pii/S0924271618301849?via%3Dihub).
+**The cropped data converted to .e57 can be accessed [here](https://1drv.ms/f/s!Am3cYTZnGFlCg07Y7lWI361rvh4a?e=IF2Rms)**
 
-
-It uses open source 3D point clouds from [The Center of excellence in laser scanning research ](https://laserscanning.fi/). For more information: [International benchmarking of terrestrial laser scanning approaches for forest inventories (Liang et al 2018).](https://www.sciencedirect.com/science/article/pii/S0924271618301849?via%3Dihub)
-**The cropped data converted to .e57 can be accessed through this [link](https://1drv.ms/f/s!Am3cYTZnGFlCg07Y7lWI361rvh4a?e=IF2Rms)**
-
- 
+{: .fs-6 .fw-300 }
 
 <p align="center">
 <img src="https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/Screenshotfrom2023-09-2517-41-31.png?raw=true" width="300" height="560"/>
 </p> 
 
-We propose to start from a pointcloud section of your choice from the highlighted link hereabove. 
+---
 
-
-
-First, import the pointcloud in Rhino. The simplest is to drag&drop in the Rhino workspace, or on the Rhino icon if Rhino is not open. 
+We propose to start from a point cloud section of your choice from the highlighted link above. 
+First, import the point cloud in Rhino. The simplest is to drag and drop in the Rhino workspace, or on the Rhino icon if Rhino is not open. 
 
 <br/><br/>
 
 ## 0 Remove Ground 
 
-We recommand to remove the ground manually (For this workshop, fiddling with ransac may not be the most suitable option).To remove some points from a pointcloud in Rhino, hold `ctrl + shift` and select with the mouse the region you want to select, then press `delete`.
+We recommend removing the ground manually (For this workshop, fiddling with ransac may not be the most suitable option).To remove some points from a point cloud in Rhino, hold `ctrl + shift` and select with the mouse the region you want to select, then press `delete`.
 <br/><br/>
 
 
 ## 1 Downsample
-For further computation it might be better to downsample the pointcloud. For this, use the **[`Cockroach_Downsample(n_points)`](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/docs/cmd_description/Cockroach_Downsample.md#cockroach_downsample)** command. This command takes as argument the number of points you want in the result point cloud.
+For further computation, it might be better to downsample the point cloud. For this, use the **[`Cockroach_Downsample(n_points)`](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/docs/cmd_description/Cockroach_Downsample.md#cockroach_downsample)** command. This command takes as argument the number of points you want in the result point cloud.
 
 
 ![img_2](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/WS_again_tutorial_1.png?raw=true)
@@ -55,12 +52,12 @@ Once the point cloud is downsampled, we can start the processing:
 
 
 ## 2 Remove statistical outliers
-The next step we propose is to remove the "statistical outilers", that is, points that probably are errors or unimportant points, because they are too isolated to be significant.
+The next step we propose is to remove the "statistical outliers", that is, points that probably are errors or unimportant points because they are too isolated to be significant.
 
 **[` Cockroach_RemoveStatisticalOutliers(Neighbours, ratio)`](https://ibois-epfl.github.io/Cockroach-documentation/docs/cmd_description/Cockroach_RemoveStatisticalOutliers/)**
 
 
- Of course, the limit between significant and unsignificant is quite vague, depends on the point cloud, and we encourage you to test some variation of the parameters we propose. Nevertheless, on our test pointcloud, those parameters yielded good results. 
+ Of course, the limit between significant and insignificant is quite vague, depending on the point cloud, and we encourage you to test some variation of the parameters we propose. Nevertheless, on our test point cloud, those parameters yielded good results. 
 
 Run the following commands:
 
@@ -73,7 +70,7 @@ Cockroach_RemoveStatisticalOutliers(800 0.5)
 ```
 
 
-Those parameters (especially the 0.4 and 0.5) are quite agressive. It basically states that the points must be at least by group of 1000, and that we are quite strict when accepting a point as part of a group. 
+Those parameters (especially the 0.4 and 0.5) are quite aggressive. It states that the points must be at least by a group of 1000 and that we are quite strict when accepting a point as part of a group. 
 
 ![img_5](https://github.com/ibois-epfl/Cockroach-documentation/blob/docu-alpha/img/WS_again_tutorial_3.png?raw=true)
 <p style="text-align: center;"><font size="2"><i>From left to right: original PC, then after 1,2,3,4,5 statistical removals</i></font></p> 
